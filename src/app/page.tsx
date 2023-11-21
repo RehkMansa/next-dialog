@@ -20,7 +20,7 @@ export default function Home() {
         ))}
       </div>
 
-      <CreatePost />
+      <CreatePost onSubmit={(post) => setPosts((prev) => [...prev, post])} />
     </main>
   );
 }
